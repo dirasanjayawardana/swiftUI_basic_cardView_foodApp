@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		528733562BCE2CEA00A0286F /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528733552BCE2CEA00A0286F /* FoodAppApp.swift */; };
+		528733562BCE2CEA00A0286F /* FoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528733552BCE2CEA00A0286F /* FoodApp.swift */; };
 		528733582BCE2CEA00A0286F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528733572BCE2CEA00A0286F /* ContentView.swift */; };
 		5287335A2BCE2CEB00A0286F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528733592BCE2CEB00A0286F /* Assets.xcassets */; };
 		5287335D2BCE2CEB00A0286F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5287335C2BCE2CEB00A0286F /* Preview Assets.xcassets */; };
+		528733652BCE2E7A00A0286F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528733642BCE2E7A00A0286F /* Food.swift */; };
+		5287336A2BCE35F000A0286F /* FoodCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528733692BCE35F000A0286F /* FoodCard.swift */; };
+		5287336D2BCE522300A0286F /* PROJECT_ANALYSIS.md in Resources */ = {isa = PBXBuildFile; fileRef = 5287336C2BCE522300A0286F /* PROJECT_ANALYSIS.md */; };
+		528733712BCE562D00A0286F /* FoodCardHorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528733702BCE562D00A0286F /* FoodCardHorizontalView.swift */; };
+		528733732BCE635E00A0286F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 528733722BCE635E00A0286F /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		528733522BCE2CEA00A0286F /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		528733552BCE2CEA00A0286F /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
+		528733552BCE2CEA00A0286F /* FoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodApp.swift; sourceTree = "<group>"; };
 		528733572BCE2CEA00A0286F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		528733592BCE2CEB00A0286F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5287335C2BCE2CEB00A0286F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		528733642BCE2E7A00A0286F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		528733692BCE35F000A0286F /* FoodCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCard.swift; sourceTree = "<group>"; };
+		5287336C2BCE522300A0286F /* PROJECT_ANALYSIS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_ANALYSIS.md; sourceTree = "<group>"; };
+		528733702BCE562D00A0286F /* FoodCardHorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCardHorizontalView.swift; sourceTree = "<group>"; };
+		528733722BCE635E00A0286F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,8 @@
 		528733492BCE2CEA00A0286F = {
 			isa = PBXGroup;
 			children = (
+				528733722BCE635E00A0286F /* .gitignore */,
+				5287336C2BCE522300A0286F /* PROJECT_ANALYSIS.md */,
 				528733542BCE2CEA00A0286F /* FoodApp */,
 				528733532BCE2CEA00A0286F /* Products */,
 			);
@@ -51,9 +63,10 @@
 		528733542BCE2CEA00A0286F /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
-				528733552BCE2CEA00A0286F /* FoodAppApp.swift */,
-				528733572BCE2CEA00A0286F /* ContentView.swift */,
-				528733592BCE2CEB00A0286F /* Assets.xcassets */,
+				528733632BCE2E4400A0286F /* Model */,
+				528733672BCE359800A0286F /* App */,
+				528733662BCE355A00A0286F /* View */,
+				528733682BCE35B700A0286F /* Resources */,
 				5287335B2BCE2CEB00A0286F /* Preview Content */,
 			);
 			path = FoodApp;
@@ -65,6 +78,48 @@
 				5287335C2BCE2CEB00A0286F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		528733632BCE2E4400A0286F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				528733642BCE2E7A00A0286F /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		528733662BCE355A00A0286F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				528733572BCE2CEA00A0286F /* ContentView.swift */,
+				5287336B2BCE50CB00A0286F /* Component */,
+				528733702BCE562D00A0286F /* FoodCardHorizontalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		528733672BCE359800A0286F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				528733552BCE2CEA00A0286F /* FoodApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		528733682BCE35B700A0286F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				528733592BCE2CEB00A0286F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5287336B2BCE50CB00A0286F /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				528733692BCE35F000A0286F /* FoodCard.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528733732BCE635E00A0286F /* .gitignore in Resources */,
+				5287336D2BCE522300A0286F /* PROJECT_ANALYSIS.md in Resources */,
 				5287335D2BCE2CEB00A0286F /* Preview Assets.xcassets in Resources */,
 				5287335A2BCE2CEB00A0286F /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				528733582BCE2CEA00A0286F /* ContentView.swift in Sources */,
-				528733562BCE2CEA00A0286F /* FoodAppApp.swift in Sources */,
+				528733712BCE562D00A0286F /* FoodCardHorizontalView.swift in Sources */,
+				528733562BCE2CEA00A0286F /* FoodApp.swift in Sources */,
+				528733652BCE2E7A00A0286F /* Food.swift in Sources */,
+				5287336A2BCE35F000A0286F /* FoodCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
