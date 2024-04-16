@@ -9,3 +9,4 @@
 - Reusable Component
 - View & Modifier
 - Color code RGB & Hexadecimals
+- Get current date

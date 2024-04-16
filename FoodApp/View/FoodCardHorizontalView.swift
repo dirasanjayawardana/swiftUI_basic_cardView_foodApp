@@ -22,7 +22,7 @@ struct FoodCardHorizontalView: View {
                 
                 VStack(alignment: .leading) {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Thrusday, 2 January 2024")
+                        Text(currentDate())
                             .foregroundStyle(.secondary)
                         Text("Your last viewed")
                             .font(.system(.title, design: .rounded))
@@ -63,6 +63,14 @@ struct FoodCardHorizontalView: View {
                 .ignoresSafeArea()
             }
         }
+    }
+    
+    private func currentDate() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE, MMM d, yyyy"
+        
+        let result = formatter.string(from: Date())
+        return result
     }
 }
 
